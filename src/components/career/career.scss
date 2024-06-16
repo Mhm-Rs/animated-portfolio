@@ -1,0 +1,31 @@
+/* career.scss */
+
+.timeline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.career-wrapper {
+  width: 70vw;
+  height: 45rem;
+  overflow-y:scroll;
+}
+
+.card-media, .card, .card-text, .card-subtitle{
+  overflow-y: hidden;
+}
+
+/* This is the general styling for hiding the scrollbar */
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  overflow-y: hidden;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  overflow-y: hidden;
+}
