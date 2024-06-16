@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   height: 100vh; /* Full viewport height */
 }
 
@@ -28,4 +29,10 @@
   scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
   overflow-y: hidden;
+}
+
+.scroll-img {
+  width: 50px; /* Adjust the size as needed */
+  position: absolute;
+  bottom: 5rem;
 }

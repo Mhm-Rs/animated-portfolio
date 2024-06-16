@@ -65,6 +65,29 @@ const items = [
 
 ];
 
+const textVariants = {
+  initial: {
+      x:-500,
+      opacity:0
+  },
+  animate: {
+      x:0,
+      opacity:1,
+      transition:{
+          duration:1,
+          staggerChildren:0.1
+      }
+  },
+  scroll:{
+      opacity:0,
+      y:10,
+      transition:{
+          duration:2,
+          repeat:Infinity
+      }
+  }
+}
+
 const Career = () => {
     return (
         <div className="timeline-container hide-scrollbar">
@@ -78,6 +101,8 @@ const Career = () => {
               classNames={{cardText:"hide-scrollbar", cardMedia:"hide-scrollbar", card:"hide-scrollbar", cardSubtitle:"hide-scrollbar"}}
             />
           </div>
+          <div><motion.img src="/scroll.png" alt="Scroller" variants={textVariants} animate="scroll" className="scroll-img"/></div>
+  
         </div>
       );
 }
